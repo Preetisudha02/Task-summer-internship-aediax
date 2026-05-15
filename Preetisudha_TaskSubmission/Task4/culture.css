@@ -1,0 +1,55 @@
+.page-section{
+    padding: 10px;
+
+}
+
+.page-section h1{
+    font-size: 2em;
+    text-align: center;
+    color: rgb(7, 107, 107);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.culture-text{
+    text-align: center;
+    font-size: medium;
+    min-height: 200px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.201);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    font-size: large;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    
+}
+
+.culture-image{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.culture-image img{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+
+    
+}
+
+@media (max-width:1024px){
+    .culture-image{
+    display: block;
+
+}
+
+.culture-image img{
+    height: 600px;
+    width: 700px;
+
+    
+}
+}
