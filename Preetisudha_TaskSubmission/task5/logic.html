@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Gates Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            overflow-x: hidden;
+        }
+        nav {
+            width: 100%;
+            padding: 1rem 5%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav h1 {
+            font-size: 2rem;
+            color: #00e5ff;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: #00e5ff;
+        }
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        .hero-content h2 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #00e5ff;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: #ddd;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.9rem 2rem;
+            background: #00e5ff;
+            color: black;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background: white;
+        }
+        section {
+            padding: 5rem 8%;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .section-title h2 {
+            font-size: 3rem;
+            color: #00e5ff;
+        }
+        .section-title p {
+            color: #ccc;
+            margin-top: 0.5rem;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 1.5rem;
+            border-radius: 20px;
+            transition: 0.4s;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #00e5ff;
+            font-size: 1.8rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        th,
+        td {
+            padding: 1rem;
+            text-align: center;
+        }
+        th {
+            background: #00e5ff;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        tr:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.5);
+            margin-top: 3rem;
+        }
+        footer p {
+            color: #bbb;
+        }
+        @media(max-width:768px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero-content h2 {
+                font-size: 2.5rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Logic Gates</h1>
+        <ul>
+            <li><a href="#tables">Truth Tables</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="hero-content">
+            <h2>Logic Gates Truth Tables</h2>
+            <p>
+                Explore the truth tables of AND, OR, NOT, NOR, NAND,
+                XOR, and XNOR logic gates in a modern responsive website.
+            </p>
+            <a href="#tables" class="btn">Explore Now</a>
+        </div>
+    </div>
+    <section id="tables">
+        <div class="section-title">
+            <h2>Truth Tables</h2>
+            <p>Basic Digital Electronics Logic Gates</p>
+        </div>
+        <div class="container">
+            <div class="card">
+                <h3>AND Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>OR Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>NOT Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>NOR Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>NAND Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </div>
+            <div class="card">
+                <h3>XOR Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>0</td></tr>
+                    <tr><td>0</td><td>1</td><td>1</td></tr>
+                    <tr><td>1</td><td>0</td><td>1</td></tr>
+                    <tr><td>1</td><td>1</td><td>0</td></tr>
+                </table>
+            </div>
+            <!-- XNOR -->
+            <div class="card">
+                <h3>XNOR Gate</h3>
+                <table>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr><td>0</td><td>0</td><td>1</td></tr>
+                    <tr><td>0</td><td>1</td><td>0</td></tr>
+                    <tr><td>1</td><td>0</td><td>0</td></tr>
+                    <tr><td>1</td><td>1</td><td>1</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+<!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Logic Gates</h2>
+        </div>
+        <p style="text-align:center; max-width:900px; margin:auto; line-height:2; color:#ddd;">
+            Logic gates are the fundamental building blocks of digital electronics.
+            They perform logical operations on one or more binary inputs to produce
+            a single binary output. Logic gates are used in computers, calculators,
+            mobile devices, and all digital systems.
+        </p>
+    </section>
+<!-- Footer -->
+    <footer>
+        <p>
+            &copy; Built for Educational Purpose | Logic Gates Truth Tables
+        </p>
+    </footer>
+</body>
+</html>

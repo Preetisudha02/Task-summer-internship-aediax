@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Office Time Table</title>
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 20px;
+        }
+
+h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+ th,td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+ th {
+            background-color: #003366;
+            color: white;
+        }
+.employeeshift {
+            background-color: #b6f3c4;
+            font-weight: bold;
+        }
+        .break {
+            background-color: #ffe699;
+            font-weight: bold;
+        }
+
+        .meeting {
+            background-color: #d9ead3;
+        }
+
+        .training {
+            background-color: #cfe2f3;
+        }
+
+        .weekend {
+            background-color: #f4cccc;
+            font-weight: bold;
+        }
+</style>
+</head>
+
+<body>
+<h1>Company Office Time Table</h1>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>Office Opening</th>
+            <th>Employee Shift</th>
+            <th>Lunch Break</th>
+            <th>Meeting Schedule</th>
+            <th>Training Timing</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td rowspan="5">9:00 AM</td>
+            <td class="employeeshift">9:30 AM - 5:30 PM</td>
+            <td class="break" , rowspan="5">Lunch Break</td>
+            <td class="meeting">11:00 AM - Team Meeting</td>
+            <td class="training">4:00 PM - Soft Skills</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td class="employeeshift">9:30 AM - 5:30 PM</td>
+            <td class="meeting">2:00 PM - Client Meeting</td>
+            <td class="training">3:00 PM - Technical Training</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td class="employeeshift">10:00 AM - 6:00 PM</td>
+            <td class="meeting">12:00 PM - Project Review</td>
+            <td class="training">5:00 PM - HR Session</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td class="employeeshift">9:00 AM - 5:00 PM</td>
+            <td class="meeting" colspan="2">
+                Company Workshop (2:00 PM - 5:00 PM)
+            </td>
+        </tr>
+        <tr>
+            <td>Friday</td>
+            <td class="employeeshift">9:30 AM - 4:30 PM</td>
+            <td class="meeting">10:00 AM - Weekly Meeting</td>
+            <td class="training">3:30 PM - Team Activity</td>
+        </tr>
+        <tr class="weekend">
+            <td>Saturday</td>
+            <td colspan="5">Half Day Office (9:00 AM - 1:00 PM)</td>
+        </tr>
+        <tr class="weekend">
+            <td>Sunday</td>
+            <td colspan="5">Office Closed</td>
+        </tr>
+    </table>
+</body>
+</html>
